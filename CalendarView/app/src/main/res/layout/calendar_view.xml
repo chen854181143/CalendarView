@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/iv_previous"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/previous_page" />
+
+        <ImageView
+            android:id="@+id/iv_next"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/next_page" />
+
+        <TextView
+            android:id="@+id/tv_current_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/iv_next"
+            android:layout_toRightOf="@id/iv_previous"
+            android:gravity="center"
+            android:text="@string/current_data"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="20sp"
+            android:gravity="center"
+            android:id="@+id/tv_sunday"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/sunday" />
+
+        <TextView
+            android:textSize="20sp"
+            android:gravity="center"
+            android:id="@+id/tv_monday"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/monday" />
+
+        <TextView
+            android:textSize="20sp"
+            android:gravity="center"
+            android:id="@+id/tv_tuesday"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/tuesday" />
+
+        <TextView
+            android:textSize="20sp"
+            android:gravity="center"
+            android:id="@+id/tv_wednesday"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/wednesday" />
+
+        <TextView
+            android:textSize="20sp"
+            android:gravity="center"
+            android:id="@+id/tv_Thursday"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/thursday" />
+
+        <TextView
+            android:textSize="20sp"
+            android:gravity="center"
+            android:id="@+id/tv_friday"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/friday" />
+
+        <TextView
+            android:textSize="20sp"
+            android:gravity="center"
+            android:id="@+id/tv_saturday"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/saturday" />
+
+
+    </LinearLayout>
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="7"></GridView>
+</LinearLayout>
